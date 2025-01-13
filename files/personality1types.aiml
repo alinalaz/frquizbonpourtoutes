@@ -1,12 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
+<aiml version="2.0" encoding="UTF-8">
     <category>
-        <pattern>Introvert</pattern>
-        <template>As an introvert, you tend to prefer solitary activities and may feel drained after social interactions. You value deep, meaningful conversations.</template>
+        <pattern>LOGIC INTROVERT</pattern>
+        <template>
+            You might be an INTP! Here are some job recommendations for you:
+            <get name="jobRecommendationsInTP"/>
+        </template>
     </category>
+
     <category>
-        <pattern>Extravert</pattern>
-        <template>As an extravert, you thrive in social settings and enjoy engaging with others. You often feel energized by social interactions.</template>
+        <pattern>LOGIC EXTRAVERT</pattern>
+        <template>
+            You might be an ENTJ! Here are some job recommendations for you:
+            <get name="jobRecommendationsEnTJ"/>
+        </template>
     </category>
-    <!-- Add more personality types here -->
+
+    <category>
+        <pattern>EMOTIONS INTROVERT</pattern>
+        <template>
+            You might be an INFP! Here are some job recommendations for you:
+            <get name="jobRecommendationsInFP"/>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EMOTIONS EXTRAVERT</pattern>
+        <template>
+            You might be an ESFJ! Here are some job recommendations for you:
+            <get name="jobRecommendationsEsFJ"/>
+        </template>
+    </category>
 </aiml>

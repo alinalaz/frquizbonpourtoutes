@@ -1,12 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
+<aiml version="2.0" encoding="UTF-8">
     <category>
-        <pattern>I need career advice</pattern>
-        <template>What field are you interested in? Technology, Healthcare, Business, Education, or something else?</template>
+        <pattern>GET JOB RECOMMENDATIONS FOR INTP</pattern>
+        <template>
+            1. Data Scientist<br/>
+            2. IT Analyst<br/>
+            3. Research Scientist
+        </template>
     </category>
+
     <category>
-        <pattern>Technology</pattern>
-        <template>Great choice! Are you interested in software development, data science, or cybersecurity?</template>
+        <pattern>GET JOB RECOMMENDATIONS FOR ENTJ</pattern>
+        <template>
+            1. Manager<br/>
+            2. Business Consultant<br/>
+            3. Project Coordinator
+        </template>
     </category>
-    <!-- Add additional career advice responses here -->
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR INFP</pattern>
+        <template>
+            1. Creative Writer<br/>
+            2. Counselor<br/>
+            3. Artist
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR ESFJ</pattern>
+        <template>
+            1. Human Resources Manager<br/>
+            2. Teacher<br/>
+            3. Community Manager
+        </template>
+    </category>
 </aiml>
