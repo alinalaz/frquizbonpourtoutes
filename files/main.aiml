@@ -105,7 +105,7 @@
     <category>
         <pattern>DREAMER</pattern>
         <template>
-            Thank you! Last question: Do you prefer following established methods or creating your own?<br/>
+            Thank you! Next question: Do you prefer following established methods or creating your own?<br/>
             <button>Established Methods</button> <button>Own Methods</button>
         </template>
     </category>
@@ -113,7 +113,7 @@
     <category>
         <pattern>REALIST</pattern>
         <template>
-            Thank you! Last question: Do you prefer following established methods or creating your own?<br/>
+            Thank you! Next question: Do you prefer following established methods or creating your own?<br/>
             <button>Established Methods</button> <button>Own Methods</button>
         </template>
     </category>
@@ -141,10 +141,12 @@
         <template>
             Recommended jobs for ISTJ: 
             <ul>
-                <li>Accountant</li>
-                <li>Project Manager</li>
-                <li>Data Analyst</li>
+                <li>Accountant: Responsible for managing financial records, perfect for the detail-oriented ISTJ.</li>
+                <li>Project Manager: Oversees projects, ideal for those who are organized and practical.</li>
+                <li>Data Analyst: Analyzes data to help organizations make informed decisions, aligning with their analytical strengths.</li>
             </ul>
+            These jobs are suitable because ISTJs are known for their reliability, attention to detail, and strong organizational skills. Do you think these jobs are suitable for you?<br/>
+            <button>Yes</button> <button>No</button>
         </template>
     </category>
 
@@ -153,10 +155,129 @@
         <template>
             Recommended jobs for ENFJ: 
             <ul>
-                <li>Teacher</li>
-                <li>HR Manager</li>
-                <li>Social Worker</li>
+                <li>Teacher: Inspires and educates students, aligning with their empathetic and nurturing nature.</li>
+                <li>HR Manager: Manages recruitment and employee relations, perfect for their people-oriented approach.</li>
+                <li>Social Worker: Supports individuals and families, suitable for their strong desire to help others.</li>
             </ul>
+            These jobs are suitable because ENFJs are typically charismatic, supportive, and excellent at understanding the emotions of others. Do you think these jobs are suitable for you?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            Great! 😊 I'm glad you think so.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            No problem! Here are some other job recommendations:<br/>
+            <ul>
+                <li>Financial Analyst: Analyzes financial data to help businesses make informed decisions.</li>
+                <li>Marketing Coordinator: Assists in the development and execution of marketing campaigns.</li>
+                <li>Customer Service Manager: Oversees customer service operations and ensures customer satisfaction.</li>
+            </ul>
+            These jobs may be a good fit because they require strong analytical skills, creativity, and the ability to manage teams effectively. Do you think these jobs are suitable for you?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <!-- New Questions Added -->
+    
+    <category>
+        <pattern>OWN METHODS</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working on projects that are creative or analytical?<br/>
+            <button>Creative</button> <button>Analytical</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTABLISHED METHODS</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working on projects that are creative or analytical?<br/>
+            <button>Creative</button> <button>Analytical</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CREATIVE</pattern>
+        <template>
+            Thank you! Next question: Do you prefer structured environments or flexible environments?<br/>
+            <button>Structured</button> <button>Flexible</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANALYTICAL</pattern>
+        <template>
+            Thank you! Next question: Do you prefer structured environments or flexible environments?<br/>
+            <button>Structured</button> <button>Flexible</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>STRUCTURED</pattern>
+        <template>
+            Thank you! Last question: Do you feel comfortable leading a team or do you prefer to follow?<br/>
+            <button>Lead</button> <button>Follow</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FLEXIBLE</pattern>
+        <template>
+            Thank you! Last question: Do you feel comfortable leading a team or do you prefer to follow?<br/>
+            <button>Lead</button> <button>Follow</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LEAD</pattern>
+        <template>
+            Thank you! Based on your responses, you are classified as an **ENTP**.<br/>
+            Your recommended jobs are:<br/>
+            <button>GET JOB RECOMMENDATIONS FOR ENTP</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOLLOW</pattern>
+        <template>
+            Thank you! Based on your responses, you are classified as an **ISFP**.<br/>
+            Your recommended jobs are:<br/>
+            <button>GET JOB RECOMMENDATIONS FOR ISFP</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR ENTP</pattern>
+        <template>
+            Recommended jobs for ENTP:
+            <ul>
+                <li>Entrepreneur: Creates and manages new businesses, utilizing their innovative thinking.</li>
+                <li>Consultant: Provides expert advice to organizations, perfect for their strategic mindset.</li>
+                <li>Public Speaker: Engages audiences with their dynamic communication skills, aligning with their outgoing nature.</li>
+            </ul>
+            These jobs are suitable because ENTPs are known for their creativity, problem-solving skills, and ability to think outside the box. Do you think these jobs are suitable for you?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR ISFP</pattern>
+        <template>
+            Recommended jobs for ISFP:
+            <ul>
+                <li>Graphic Designer: Creates visual content, perfect for their artistic nature.</li>
+                <li>Musician: Composes and performs music, aligning with their creative expression.</li>
+                <li>Interior Designer: Designs functional and aesthetically pleasing spaces, ideal for their attention to detail.</li>
+            </ul>
+            These jobs are suitable because ISFPs are known for their artistic talents, sensitivity, and ability to connect with others on an emotional level. Do you think these jobs are suitable for you?<br/>
+            <button>Yes</button> <button>No</button>
         </template>
     </category>
 </aiml>
