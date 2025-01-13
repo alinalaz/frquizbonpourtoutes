@@ -55,71 +55,71 @@
     </category>
 
     <category>
-        <pattern>DATA</pattern>
+        <pattern>PLAN</pattern>
         <template>
             Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
             <button>Routine</button> <button>Variety</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SPONTANEOUS</pattern>
+        <template>
+            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
+            <button>Routine</button> <button>Variety</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DATA</pattern>
+        <template>
+            Thank you! Next question: Are you more of a dreamer or a realist?<br/>
+            <button>Dreamer</button> <button>Realist</button>
         </template>
     </category>
 
     <category>
         <pattern>PEOPLE</pattern>
         <template>
-            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
-            <button>Routine</button> <button>Variety</button>
+            Thank you! Next question: Are you more of a dreamer or a realist?<br/>
+            <button>Dreamer</button> <button>Realist</button>
         </template>
     </category>
 
     <category>
         <pattern>ROUTINE</pattern>
         <template>
-            Thank you! Next question: Do you prefer working on long-term projects or short-term tasks?<br/>
-            <button>Long-term Projects</button> <button>Short-term Tasks</button>
+            Thank you! Next question: Do you prefer working on projects individually or as part of a group?<br/>
+            <button>Individually</button> <button>Group</button>
         </template>
     </category>
 
     <category>
         <pattern>VARIETY</pattern>
         <template>
-            Thank you! Next question: Do you prefer working on long-term projects or short-term tasks?<br/>
-            <button>Long-term Projects</button> <button>Short-term Tasks</button>
+            Thank you! Next question: Do you prefer working on projects individually or as part of a group?<br/>
+            <button>Individually</button> <button>Group</button>
         </template>
     </category>
 
     <category>
-        <pattern>LONG-TERM PROJECTS</pattern>
+        <pattern>DREAMER</pattern>
         <template>
-            Thank you! Next question: Do you find it easy to connect with others emotionally?<br/>
-            <button>Yes</button> <button>No</button>
+            Thank you! Last question: Do you prefer following established methods or creating your own?<br/>
+            <button>Established Methods</button> <button>Own Methods</button>
         </template>
     </category>
 
     <category>
-        <pattern>SHORT-TERM TASKS</pattern>
+        <pattern>REALIST</pattern>
         <template>
-            Thank you! Next question: Do you find it easy to connect with others emotionally?<br/>
-            <button>Yes</button> <button>No</button>
+            Thank you! Last question: Do you prefer following established methods or creating your own?<br/>
+            <button>Established Methods</button> <button>Own Methods</button>
         </template>
     </category>
 
     <category>
-        <pattern>YES</pattern>
-        <template>
-            Thank you! Last question: Do you prefer clear instructions or figuring things out on your own?<br/>
-            <button>Clear Instructions</button> <button>Figure It Out</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>NO</pattern>
-        <template>
-            Thank you! Last question: Do you prefer clear instructions or figuring things out on your own?<br/>
-            <button>Clear Instructions</button> <button>Figure It Out</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>CLEAR INSTRUCTIONS</pattern>
+        <pattern>INDIVIDUALLY</pattern>
         <template>
             Thank you! Based on your responses, you are classified as an **ISTJ**.<br/>
             Your recommended jobs are:<br/>
@@ -128,7 +128,7 @@
     </category>
 
     <category>
-        <pattern>FIGURE IT OUT</pattern>
+        <pattern>GROUP</pattern>
         <template>
             Thank you! Based on your responses, you are classified as an **ENFJ**.<br/>
             Your recommended jobs are:<br/>
