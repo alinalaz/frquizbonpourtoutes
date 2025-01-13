@@ -1,33 +1,114 @@
 <aiml version="2.0" encoding="UTF-8">
+    <!-- Personality Types -->
     <category>
-        <pattern>LOGIC INTROVERT</pattern>
+        <pattern>ISTJ</pattern>
         <template>
-            You might be an INTP! Here are some job recommendations for you:
-            <get name="jobRecommendationsInTP"/>
+            You are classified as an **ISTJ**. ISTJs are known for their practicality, reliability, and organization. They prefer structure and are very responsible.
         </template>
     </category>
 
     <category>
-        <pattern>LOGIC EXTRAVERT</pattern>
+        <pattern>ISFJ</pattern>
         <template>
-            You might be an ENTJ! Here are some job recommendations for you:
-            <get name="jobRecommendationsEnTJ"/>
+            You are classified as an **ISFJ**. ISFJs are nurturing and caring, often putting others' needs before their own. They are detail-oriented and loyal.
         </template>
     </category>
 
     <category>
-        <pattern>EMOTIONS INTROVERT</pattern>
+        <pattern>INFJ</pattern>
         <template>
-            You might be an INFP! Here are some job recommendations for you:
-            <get name="jobRecommendationsInFP"/>
+            You are classified as an **INFJ**. INFJs are insightful, empathetic, and value deep connections with others. They often seek to understand the complexities of life.
         </template>
     </category>
 
     <category>
-        <pattern>EMOTIONS EXTRAVERT</pattern>
+        <pattern>INTJ</pattern>
         <template>
-            You might be an ESFJ! Here are some job recommendations for you:
-            <get name="jobRecommendationsEsFJ"/>
+            You are classified as an **INTJ**. INTJs are strategic thinkers, driven by their desire to understand and improve systems and processes.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ISTP</pattern>
+        <template>
+            You are classified as an **ISTP**. ISTPs are practical and efficient, with a strong ability to troubleshoot and solve problems as they arise.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ISFP</pattern>
+        <template>
+            You are classified as an **ISFP**. ISFPs are creative and artistic, often preferring to express themselves through their work and surroundings.
+        </template>
+    </category>
+
+    <category>
+        <pattern>INFP</pattern>
+        <template>
+            You are classified as an **INFP**. INFPs are idealistic and compassionate, with a strong focus on personal values and helping others.
+        </template>
+    </category>
+
+    <category>
+        <pattern>INTP</pattern>
+        <template>
+            You are classified as an **INTP**. INTPs are analytical and logical, enjoying theoretical exploration and problem-solving.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTP</pattern>
+        <template>
+            You are classified as an **ESTP**. ESTPs are energetic and action-oriented, thriving in fast-paced environments and enjoying hands-on work.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESFP</pattern>
+        <template>
+            You are classified as an **ESFP**. ESFPs are enthusiastic and sociable, often seeking excitement and fun in their experiences.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENFP</pattern>
+        <template>
+            You are classified as an **ENFP**. ENFPs are creative and outgoing, often looking for innovative ways to connect with others and express themselves.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENTP</pattern>
+        <template>
+            You are classified as an **ENTP**. ENTPs are inventive and clever, always seeking new ideas and challenges.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTJ</pattern>
+        <template>
+            You are classified as an **ESTJ**. ESTJs are organized and decisive, valuing order and structure in their work and personal lives.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESFJ</pattern>
+        <template>
+            You are classified as an **ESFJ**. ESFJs are sociable and caring, often focused on maintaining harmony in their relationships.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENFJ</pattern>
+        <template>
+            You are classified as an **ENFJ**. ENFJs are charismatic and inspiring, often taking on leadership roles and motivating others.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ENTJ</pattern>
+        <template>
+            You are classified as an **ENTJ**. ENTJs are assertive and strategic leaders, often driven to organize and implement plans efficiently.
         </template>
     </category>
 </aiml>

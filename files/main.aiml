@@ -1,6 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-    <include file="personality_quiz.aiml"/>
-    <include file="personality_types.aiml"/>
-    <include file="career_advice.aiml"/>
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>START</pattern>
+        <template>
+            Welcome to the Personality Job Matcher! Let's find out your personality type. Are you ready to begin?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            Great! First question: Do you prefer working alone or in a team?<br/>
+            <button>Alone</button> <button>In a team</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            No worries! If you change your mind, just type "START" to begin the quiz.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ALONE</pattern>
+        <template>
+            Thank you! Next question: Do you rely more on your head or your heart when making decisions?<br/>
+            <button>Head</button> <button>Heart</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IN A TEAM</pattern>
+        <template>
+            Thank you! Next question: Do you prefer to plan things in advance or be spontaneous?<br/>
+            <button>Plan</button> <button>Spontaneous</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEAD</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working with data or with people?<br/>
+            <button>Data</button> <button>People</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEART</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working with data or with people?<br/>
+            <button>Data</button> <button>People</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DATA</pattern>
+        <template>
+            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
+            <button>Routine</button> <button>Variety</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PEOPLE</pattern>
+        <template>
+            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
+            <button>Routine</button> <button>Variety</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ROUTINE</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working on long-term projects or short-term tasks?<br/>
+            <button>Long-term Projects</button> <button>Short-term Tasks</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>VARIETY</pattern>
+        <template>
+            Thank you! Next question: Do you prefer working on long-term projects or short-term tasks?<br/>
+            <button>Long-term Projects</button> <button>Short-term Tasks</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LONG-TERM PROJECTS</pattern>
+        <template>
+            Thank you! Next question: Do you find it easy to connect with others emotionally?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHORT-TERM TASKS</pattern>
+        <template>
+            Thank you! Next question: Do you find it easy to connect with others emotionally?<br/>
+            <button>Yes</button> <button>No</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            Thank you! Last question: Do you prefer clear instructions or figuring things out on your own?<br/>
+            <button>Clear Instructions</button> <button>Figure It Out</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            Thank you! Last question: Do you prefer clear instructions or figuring things out on your own?<br/>
+            <button>Clear Instructions</button> <button>Figure It Out</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CLEAR INSTRUCTIONS</pattern>
+        <template>
+            Thank you! Based on your responses, you are classified as an **ISTJ**.<br/>
+            Your recommended jobs are:<br/>
+            <button>GET JOB RECOMMENDATIONS FOR ISTJ</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FIGURE IT OUT</pattern>
+        <template>
+            Thank you! Based on your responses, you are classified as an **ENFJ**.<br/>
+            Your recommended jobs are:<br/>
+            <button>GET JOB RECOMMENDATIONS FOR ENFJ</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR ISTJ</pattern>
+        <template>
+            Recommended jobs for ISTJ: 
+            <ul>
+                <li>Accountant</li>
+                <li>Project Manager</li>
+                <li>Data Analyst</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GET JOB RECOMMENDATIONS FOR ENFJ</pattern>
+        <template>
+            Recommended jobs for ENFJ: 
+            <ul>
+                <li>Teacher</li>
+                <li>HR Manager</li>
+                <li>Social Worker</li>
+            </ul>
+        </template>
+    </category>
 </aiml>

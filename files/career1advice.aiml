@@ -1,37 +1,194 @@
 <aiml version="2.0" encoding="UTF-8">
+    <!-- Jobs recommendations -->
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR INTP</pattern>
+        <pattern>JOBS FOR ISTJ</pattern>
         <template>
-            1. Data Scientist<br/>
-            2. IT Analyst<br/>
-            3. Research Scientist
+            ISTJ Recommended Jobs:
+            <ul>
+                <li>Accountant</li>
+                <li>Data Analyst</li>
+                <li>Project Manager</li>
+            </ul>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ENTJ</pattern>
+        <pattern>JOBS FOR ISFJ</pattern>
         <template>
-            1. Manager<br/>
-            2. Business Consultant<br/>
-            3. Project Coordinator
+            ISFJ Recommended Jobs:
+            <ul>
+                <li>Nurse</li>
+                <li>Social Worker</li>
+                <li>Teacher</li>
+            </ul>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR INFP</pattern>
+        <pattern>JOBS FOR INFJ</pattern>
         <template>
-            1. Creative Writer<br/>
-            2. Counselor<br/>
-            3. Artist
+            INFJ Recommended Jobs:
+            <ul>
+                <li>Psychologist</li>
+                <li>Writer</li>
+                <li>Consultant</li>
+            </ul>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ESFJ</pattern>
+        <pattern>JOBS FOR INTJ</pattern>
         <template>
-            1. Human Resources Manager<br/>
-            2. Teacher<br/>
-            3. Community Manager
+            INTJ Recommended Jobs:
+            <ul>
+                <li>Scientist</li>
+                <li>Software Developer</li>
+                <li>Engineer</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ISTP</pattern>
+        <template>
+            ISTP Recommended Jobs:
+            <ul>
+                <li>Mechanic</li>
+                <li>Surgeon</li>
+                <li>Engineer</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ISFP</pattern>
+        <template>
+            ISFP Recommended Jobs:
+            <ul>
+                <li>Artist</li>
+                <li>Musician</li>
+                <li>Interior Designer</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR INFP</pattern>
+        <template>
+            INFP Recommended Jobs:
+            <ul>
+                <li>Writer</li>
+                <li>Counselor</li>
+                <li>Nonprofit Worker</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR INTP</pattern>
+        <template>
+            INTP Recommended Jobs:
+            <ul>
+                <li>Scientist</li>
+                <li>Philosopher</li>
+                <li>Software Developer</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ESTP</pattern>
+        <template>
+            ESTP Recommended Jobs:
+            <ul>
+                <li>Sales Representative</li>
+                <li>Emergency Medical Technician</li>
+                <li>Professional Athlete</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ESFP</pattern>
+        <template>
+            ESFP Recommended Jobs:
+            <ul>
+                <li>Actor</li>
+                <li>Event Planner</li>
+                <li>Teacher</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ENFP</pattern>
+        <template>
+            ENFP Recommended Jobs:
+            <ul>
+                <li>Public Relations Specialist</li>
+                <li>Journalist</li>
+                <li>Marketing Specialist</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ENTP</pattern>
+        <template>
+            ENTP Recommended Jobs:
+            <ul>
+                <li>Entrepreneur</li>
+                <li>Consultant</li>
+                <li>Innovator</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ESTJ</pattern>
+        <template>
+            ESTJ Recommended Jobs:
+            <ul>
+                <li>Business Executive</li>
+                <li>Manager</li>
+                <li>Project Coordinator</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ESFJ</pattern>
+        <template>
+            ESFJ Recommended Jobs:
+            <ul>
+                <li>Teacher</li>
+                <li>Healthcare Provider</li>
+                <li>Customer Service Manager</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ENFJ</pattern>
+        <template>
+            ENFJ Recommended Jobs:
+            <ul>
+                <li>Human Resources Manager</li>
+                <li>Life Coach</li>
+                <li>Community Organizer</li>
+            </ul>
+        </template>
+    </category>
+
+    <category>
+        <pattern>JOBS FOR ENTJ</pattern>
+        <template>
+            ENTJ Recommended Jobs:
+            <ul>
+                <li>Corporate Executive</li>
+                <li>Strategic Planner</li>
+                <li>Management Consultant</li>
+            </ul>
         </template>
     </category>
 </aiml>
