@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>I need career advice</pattern>
+        <template>What field are you interested in? Technology, Healthcare, Business, Education, or something else?</template>
+    </category>
+    <category>
+        <pattern>Technology</pattern>
+        <template>Great choice! Are you interested in software development, data science, or cybersecurity?</template>
+    </category>
+    <!-- Add additional career advice responses here -->
+</aiml>

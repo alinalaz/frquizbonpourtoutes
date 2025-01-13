@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>Hello</pattern>
+        <template>
+            Hello! How can I assist you today? Would you like to take a personality quiz?
+            <option>
+                <button onclick="sendMessage('Yes')">Yes</button>
+                <button onclick="sendMessage('No')">No</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Yes</pattern>
+        <template>
+            Great! Let's start the personality quiz. Here’s the first question: 
+            1. Do you prefer spending time alone or with others?
+            <option>
+                <button onclick="sendMessage('Spending time alone')">Spending time alone</button>
+                <button onclick="sendMessage('With others')">With others</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Spending time alone</pattern>
+        <template>
+            Interesting! 2. When faced with a challenge, do you tend to tackle it head-on or think about it before taking action?
+            <option>
+                <button onclick="sendMessage('Tackle it head-on')">Tackle it head-on</button>
+                <button onclick="sendMessage('Think about it before taking action')">Think about it before taking action</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>With others</pattern>
+        <template>
+            Awesome! 2. When faced with a challenge, do you tend to tackle it head-on or think about it before taking action?
+            <option>
+                <button onclick="sendMessage('Tackle it head-on')">Tackle it head-on</button>
+                <button onclick="sendMessage('Think about it before taking action')">Think about it before taking action</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Tackle it head-on</pattern>
+        <template>
+            Great! 3. Do you often rely on your intuition or prefer to use logic in decision-making?
+            <option>
+                <button onclick="sendMessage('Rely on my intuition')">Rely on my intuition</button>
+                <button onclick="sendMessage('Prefer to use logic')">Prefer to use logic</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Think about it before taking action</pattern>
+        <template>
+            That's a good approach! 3. Do you often rely on your intuition or prefer to use logic in decision-making?
+            <option>
+                <button onclick="sendMessage('Rely on my intuition')">Rely on my intuition</button>
+                <button onclick="sendMessage('Prefer to use logic')">Prefer to use logic</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Rely on my intuition</pattern>
+        <template>
+            Got it! 4. Do you prefer to stick to a plan or be spontaneous?
+            <option>
+                <button onclick="sendMessage('Stick to a plan')">Stick to a plan</button>
+                <button onclick="sendMessage('Be spontaneous')">Be spontaneous</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Prefer to use logic</pattern>
+        <template>
+            Understood! 4. Do you prefer to stick to a plan or be spontaneous?
+            <option>
+                <button onclick="sendMessage('Stick to a plan')">Stick to a plan</button>
+                <button onclick="sendMessage('Be spontaneous')">Be spontaneous</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Stick to a plan</pattern>
+        <template>
+            That makes sense! 5. When working on a project, do you prefer to work alone or as part of a team?
+            <option>
+                <button onclick="sendMessage('Work alone')">Work alone</button>
+                <button onclick="sendMessage('As part of a team')">As part of a team</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Be spontaneous</pattern>
+        <template>
+            Fun choice! 5. When working on a project, do you prefer to work alone or as part of a team?
+            <option>
+                <button onclick="sendMessage('Work alone')">Work alone</button>
+                <button onclick="sendMessage('As part of a team')">As part of a team</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Work alone</pattern>
+        <template>
+            Interesting! 6. Are you more detail-oriented or big-picture focused?
+            <option>
+                <button onclick="sendMessage('Detail-oriented')">Detail-oriented</button>
+                <button onclick="sendMessage('Big-picture focused')">Big-picture focused</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>As part of a team</pattern>
+        <template>
+            Teamwork can be great! 6. Are you more detail-oriented or big-picture focused?
+            <option>
+                <button onclick="sendMessage('Detail-oriented')">Detail-oriented</button>
+                <button onclick="sendMessage('Big-picture focused')">Big-picture focused</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Detail-oriented</pattern>
+        <template>
+            Got it! 7. Do you prefer routine or variety in your daily life?
+            <option>
+                <button onclick="sendMessage('Routine')">Routine</button>
+                <button onclick="sendMessage('Variety')">Variety</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Big-picture focused</pattern>
+        <template>
+            That’s a strong perspective! 7. Do you prefer routine or variety in your daily life?
+            <option>
+                <button onclick="sendMessage('Routine')">Routine</button>
+                <button onclick="sendMessage('Variety')">Variety</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Routine</pattern>
+        <template>
+            Consistency is key! 8. Do you find it easy to express your feelings or do you keep them to yourself?
+            <option>
+                <button onclick="sendMessage('Find it easy to express my feelings')">Find it easy to express my feelings</button>
+                <button onclick="sendMessage('Keep them to myself')">Keep them to myself</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Variety</pattern>
+        <template>
+            Exciting choice! 8. Do you find it easy to express your feelings or do you keep them to yourself?
+            <option>
+                <button onclick="sendMessage('Find it easy to express my feelings')">Find it easy to express my feelings</button>
+                <button onclick="sendMessage('Keep them to myself')">Keep them to myself</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Find it easy to express my feelings</pattern>
+        <template>
+            That's great! 9. Do you prefer planning your vacations or going with the flow?
+            <option>
+                <button onclick="sendMessage('Planning my vacations')">Planning my vacations</button>
+                <button onclick="sendMessage('Going with the flow')">Going with the flow</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Keep them to myself</pattern>
+        <template>
+            That’s understandable! 9. Do you prefer planning your vacations or going with the flow?
+            <option>
+                <button onclick="sendMessage('Planning my vacations')">Planning my vacations</button>
+                <button onclick="sendMessage('Going with the flow')">Going with the flow</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Planning my vacations</pattern>
+        <template>
+            Sounds organized! 10. Do you enjoy meeting new people or do you prefer to stick with friends you know well?
+            <option>
+                <button onclick="sendMessage('Enjoy meeting new people')">Enjoy meeting new people</button>
+                <button onclick="sendMessage('Prefer to stick with friends')">Prefer to stick with friends</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Going with the flow</pattern>
+        <template>
+            Fun! 10. Do you enjoy meeting new people or do you prefer to stick with friends you know well?
+            <option>
+                <button onclick="sendMessage('Enjoy meeting new people')">Enjoy meeting new people</button>
+                <button onclick="sendMessage('Prefer to stick with friends')">Prefer to stick with friends</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Enjoy meeting new people</pattern>
+        <template>
+            That's adventurous! 11. Do you prefer quiet evenings or lively social gatherings?
+            <option>
+                <button onclick="sendMessage('Quiet evenings')">Quiet evenings</button>
+                <button onclick="sendMessage('Lively social gatherings')">Lively social gatherings</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Prefer to stick with friends</pattern>
+        <template>
+            That's nice! 11. Do you prefer quiet evenings or lively social gatherings?
+            <option>
+                <button onclick="sendMessage('Quiet evenings')">Quiet evenings</button>
+                <button onclick="sendMessage('Lively social gatherings')">Lively social gatherings</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Quiet evenings</pattern>
+        <template>
+            Very relaxing! 12. Are you more of an optimist or a pessimist?
+            <option>
+                <button onclick="sendMessage('Optimist')">Optimist</button>
+                <button onclick="sendMessage('Pessimist')">Pessimist</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Lively social gatherings</pattern>
+        <template>
+            Sounds fun! 12. Are you more of an optimist or a pessimist?
+            <option>
+                <button onclick="sendMessage('Optimist')">Optimist</button>
+                <button onclick="sendMessage('Pessimist')">Pessimist</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Optimist</pattern>
+        <template>
+            That's a positive outlook! 13. Do you like to try new things or stick with what you know?
+            <option>
+                <button onclick="sendMessage('Like to try new things')">Like to try new things</button>
+                <button onclick="sendMessage('Stick with what I know')">Stick with what I know</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Pessimist</pattern>
+        <template>
+            That's a realistic view! 13. Do you like to try new things or stick with what you know?
+            <option>
+                <button onclick="sendMessage('Like to try new things')">Like to try new things</button>
+                <button onclick="sendMessage('Stick with what I know')">Stick with what I know</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Like to try new things</pattern>
+        <template>
+            That's adventurous! 14. Do you prefer a structured environment or a flexible one?
+            <option>
+                <button onclick="sendMessage('Structured environment')">Structured environment</button>
+                <button onclick="sendMessage('Flexible environment')">Flexible environment</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Stick with what I know</pattern>
+        <template>
+            Comfort is important! 14. Do you prefer a structured environment or a flexible one?
+            <option>
+                <button onclick="sendMessage('Structured environment')">Structured environment</button>
+                <button onclick="sendMessage('Flexible environment')">Flexible environment</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Structured environment</pattern>
+        <template>
+            That makes sense! 15. Finally, do you prefer to work under pressure or in a relaxed setting?
+            <option>
+                <button onclick="sendMessage('Under pressure')">Under pressure</button>
+                <button onclick="sendMessage('In a relaxed setting')">In a relaxed setting</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Flexible environment</pattern>
+        <template>
+            That sounds freeing! 15. Finally, do you prefer to work under pressure or in a relaxed setting?
+            <option>
+                <button onclick="sendMessage('Under pressure')">Under pressure</button>
+                <button onclick="sendMessage('In a relaxed setting')">In a relaxed setting</button>
+            </option>
+        </template>
+    </category>
+    <category>
+        <pattern>Under pressure</pattern>
+        <template>
+            Interesting choice! You might thrive in fast-paced environments. Thank you for taking the quiz!
+        </template>
+    </category>
+    <category>
+        <pattern>In a relaxed setting</pattern>
+        <template>
+            That's a great preference! A relaxed setting can enhance creativity. Thank you for taking the quiz!
+        </template>
+    </category>
+</aiml>

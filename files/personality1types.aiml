@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>Introvert</pattern>
+        <template>As an introvert, you tend to prefer solitary activities and may feel drained after social interactions. You value deep, meaningful conversations.</template>
+    </category>
+    <category>
+        <pattern>Extravert</pattern>
+        <template>As an extravert, you thrive in social settings and enjoy engaging with others. You often feel energized by social interactions.</template>
+    </category>
+    <!-- Add more personality types here -->
+</aiml>

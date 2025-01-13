@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <include file="personality_quiz.aiml"/>
+    <include file="personality_types.aiml"/>
+    <include file="career_advice.aiml"/>
+</aiml>
