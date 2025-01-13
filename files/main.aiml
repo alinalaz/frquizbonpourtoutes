@@ -1,283 +1,575 @@
 <aiml version="2.0" encoding="UTF-8">
+    <!-- Starting the Quiz -->
     <category>
-        <pattern>START</pattern>
+        <pattern>START QUIZ</pattern>
         <template>
-            Welcome to the Personality Job Matcher! Let's find out your personality type. Are you ready to begin?<br/>
-            <button>Yes</button> <button>No</button>
+            Welcome to the Career Orientation Quiz! Let's get started with your first question:<br/>
+            What do you enjoy doing in your free time?<br/>
+            <button>Reading</button>
+            <button>Socializing</button>
+            <button>Building things</button>
+            <button>Helping others</button>
+        </template>
+    </category>
+
+    <!-- Question 1 -->
+    <category>
+        <pattern>READING</pattern>
+        <template>
+            <think><set name="q1">1</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>YES</pattern>
+        <pattern>SOCIALIZING</pattern>
         <template>
-            Great! First question: Do you prefer working alone or in a team?<br/>
-            <button>Alone</button> <button>In a team</button>
+            <think><set name="q1">2</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>NO</pattern>
+        <pattern>BUILDING THINGS</pattern>
         <template>
-            No worries! If you change your mind, just type "START" to begin the quiz.
+            <think><set name="q1">3</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>ALONE</pattern>
+        <pattern>HELPING OTHERS</pattern>
         <template>
-            Thank you! Next question: Do you rely more on your head or your heart when making decisions?<br/>
-            <button>Head</button> <button>Heart</button>
+            <think><set name="q1">4</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
+        </template>
+    </category>
+
+    <!-- Question 2 -->
+    <category>
+        <pattern>INDEPENDENTLY</pattern>
+        <template>
+            <think><set name="q2">1</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
         <pattern>IN A TEAM</pattern>
         <template>
-            Thank you! Next question: Do you prefer to plan things in advance or be spontaneous?<br/>
-            <button>Plan</button> <button>Spontaneous</button>
+            <think><set name="q2">2</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
-        <pattern>HEAD</pattern>
+        <pattern>IN A STRUCTURED ENVIRONMENT</pattern>
         <template>
-            Thank you! Next question: Do you prefer working with data or with people?<br/>
-            <button>Data</button> <button>People</button>
+            <think><set name="q2">3</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
-        <pattern>HEART</pattern>
+        <pattern>IN A FLEXIBLE ENVIRONMENT</pattern>
         <template>
-            Thank you! Next question: Do you prefer working with data or with people?<br/>
-            <button>Data</button> <button>People</button>
+            <think><set name="q2">4</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
+        </template>
+    </category>
+
+    <!-- Question 3 -->
+    <category>
+        <pattern>RECOGNITION AND REWARDS</pattern>
+        <template>
+            <think><set name="q3">1</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>PLAN</pattern>
+        <pattern>MAKING A DIFFERENCE</pattern>
         <template>
-            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
-            <button>Routine</button> <button>Variety</button>
+            <think><set name="q3">2</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>SPONTANEOUS</pattern>
+        <pattern>CONTINUOUS LEARNING</pattern>
         <template>
-            Thank you! Next question: Do you enjoy routine or variety in your work?<br/>
-            <button>Routine</button> <button>Variety</button>
+            <think><set name="q3">3</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>DATA</pattern>
+        <pattern>STABILITY AND SECURITY</pattern>
         <template>
-            Thank you! Next question: Are you more of a dreamer or a realist?<br/>
-            <button>Dreamer</button> <button>Realist</button>
+            <think><set name="q3">4</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
+        </template>
+    </category>
+
+    <!-- Question 4 -->
+    <category>
+        <pattern>CREATIVELY</pattern>
+        <template>
+            <think><set name="q4">1</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>PEOPLE</pattern>
+        <pattern>ANALYTICALLY</pattern>
         <template>
-            Thank you! Next question: Are you more of a dreamer or a realist?<br/>
-            <button>Dreamer</button> <button>Realist</button>
+            <think><set name="q4">2</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>ROUTINE</pattern>
+        <pattern>PRAGMATICALLY</pattern>
         <template>
-            Thank you! Next question: Do you prefer working on projects individually or as part of a group?<br/>
-            <button>Individually</button> <button>Group</button>
+            <think><set name="q4">3</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>VARIETY</pattern>
+        <pattern>COLLABORATIVELY</pattern>
         <template>
-            Thank you! Next question: Do you prefer working on projects individually or as part of a group?<br/>
-            <button>Individually</button> <button>Group</button>
+            <think><set name="q4">4</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
+        </template>
+    </category>
+
+    <!-- Question 5 -->
+    <category>
+        <pattern>DYNAMIC AND FAST-PACED</pattern>
+        <template>
+            <think><set name="q5">1</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
 
     <category>
-        <pattern>DREAMER</pattern>
+        <pattern>CALM AND ORGANIZED</pattern>
         <template>
-            Thank you! Next question: Do you prefer following established methods or creating your own?<br/>
-            <button>Established Methods</button> <button>Own Methods</button>
+            <think><set name="q5">2</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
 
     <category>
-        <pattern>REALIST</pattern>
+        <pattern>TEAM-ORIENTED</pattern>
         <template>
-            Thank you! Next question: Do you prefer following established methods or creating your own?<br/>
-            <button>Established Methods</button> <button>Own Methods</button>
+            <think><set name="q5">3</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
 
     <category>
-        <pattern>INDIVIDUALLY</pattern>
+        <pattern>INDEPENDENT</pattern>
         <template>
-            Thank you! Based on your responses, you are classified as an **ISTJ**.<br/>
-            Your recommended jobs are:<br/>
-            <button>GET JOB RECOMMENDATIONS FOR ISTJ</button>
+            <think><set name="q5">4</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
+        </template>
+    </category>
+
+    <!-- Finalize the Quiz -->
+<aiml version="2.0" encoding="UTF-8">
+    <!-- Starting the Quiz -->
+    <category>
+        <pattern>START QUIZ</pattern>
+        <template>
+            Welcome to the Career Orientation Quiz! Let's get started with your first question:<br/>
+            What do you enjoy doing in your free time?<br/>
+            <button>Reading</button>
+            <button>Socializing</button>
+            <button>Building things</button>
+            <button>Helping others</button>
+        </template>
+    </category>
+
+    <!-- Question 1 -->
+    <category>
+        <pattern>READING</pattern>
+        <template>
+            <think><set name="q1">1</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>GROUP</pattern>
+        <pattern>SOCIALIZING</pattern>
         <template>
-            Thank you! Based on your responses, you are classified as an **ENFJ**.<br/>
-            Your recommended jobs are:<br/>
-            <button>GET JOB RECOMMENDATIONS FOR ENFJ</button>
+            <think><set name="q1">2</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ISTJ</pattern>
+        <pattern>BUILDING THINGS</pattern>
         <template>
-            Recommended jobs for ISTJ: 
-            <ul>
-                <li>Accountant: Responsible for managing financial records, perfect for the detail-oriented ISTJ.</li>
-                <li>Project Manager: Oversees projects, ideal for those who are organized and practical.</li>
-                <li>Data Analyst: Analyzes data to help organizations make informed decisions, aligning with their analytical strengths.</li>
-            </ul>
-            These jobs are suitable because ISTJs are known for their reliability, attention to detail, and strong organizational skills. Do you think these jobs are suitable for you?<br/>
-            <button>Yes</button> <button>No</button>
+            <think><set name="q1">3</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ENFJ</pattern>
+        <pattern>HELPING OTHERS</pattern>
         <template>
-            Recommended jobs for ENFJ: 
-            <ul>
-                <li>Teacher: Inspires and educates students, aligning with their empathetic and nurturing nature.</li>
-                <li>HR Manager: Manages recruitment and employee relations, perfect for their people-oriented approach.</li>
-                <li>Social Worker: Supports individuals and families, suitable for their strong desire to help others.</li>
-            </ul>
-            These jobs are suitable because ENFJs are typically charismatic, supportive, and excellent at understanding the emotions of others. Do you think these jobs are suitable for you?<br/>
-            <button>Yes</button> <button>No</button>
+            <think><set name="q1">4</set></think>
+            Great! Next question:<br/>
+            How do you prefer to work?<br/>
+            <button>Independently</button>
+            <button>In a team</button>
+            <button>In a structured environment</button>
+            <button>In a flexible environment</button>
+        </template>
+    </category>
+
+    <!-- Question 2 -->
+    <category>
+        <pattern>INDEPENDENTLY</pattern>
+        <template>
+            <think><set name="q2">1</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
-        <pattern>YES</pattern>
+        <pattern>IN A TEAM</pattern>
         <template>
-            Great! 😊 I'm glad you think so.
+            <think><set name="q2">2</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
-        <pattern>NO</pattern>
+        <pattern>IN A STRUCTURED ENVIRONMENT</pattern>
         <template>
-            No problem! Here are some other job recommendations:<br/>
-            <ul>
-                <li>Financial Analyst: Analyzes financial data to help businesses make informed decisions.</li>
-                <li>Marketing Coordinator: Assists in the development and execution of marketing campaigns.</li>
-                <li>Customer Service Manager: Oversees customer service operations and ensures customer satisfaction.</li>
-            </ul>
-            These jobs may be a good fit because they require strong analytical skills, creativity, and the ability to manage teams effectively. Do you think these jobs are suitable for you?<br/>
-            <button>Yes</button> <button>No</button>
-        </template>
-    </category>
-
-    <!-- New Questions Added -->
-    
-    <category>
-        <pattern>OWN METHODS</pattern>
-        <template>
-            Thank you! Next question: Do you prefer working on projects that are creative or analytical?<br/>
-            <button>Creative</button> <button>Analytical</button>
+            <think><set name="q2">3</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
         </template>
     </category>
 
     <category>
-        <pattern>ESTABLISHED METHODS</pattern>
+        <pattern>IN A FLEXIBLE ENVIRONMENT</pattern>
         <template>
-            Thank you! Next question: Do you prefer working on projects that are creative or analytical?<br/>
-            <button>Creative</button> <button>Analytical</button>
+            <think><set name="q2">4</set></think>
+            Nice! Next question:<br/>
+            What motivates you most in a job?<br/>
+            <button>Recognition and rewards</button>
+            <button>Making a difference</button>
+            <button>Continuous learning</button>
+            <button>Stability and security</button>
+        </template>
+    </category>
+
+    <!-- Question 3 -->
+    <category>
+        <pattern>RECOGNITION AND REWARDS</pattern>
+        <template>
+            <think><set name="q3">1</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>CREATIVE</pattern>
+        <pattern>MAKING A DIFFERENCE</pattern>
         <template>
-            Thank you! Next question: Do you prefer structured environments or flexible environments?<br/>
-            <button>Structured</button> <button>Flexible</button>
+            <think><set name="q3">2</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>ANALYTICAL</pattern>
+        <pattern>CONTINUOUS LEARNING</pattern>
         <template>
-            Thank you! Next question: Do you prefer structured environments or flexible environments?<br/>
-            <button>Structured</button> <button>Flexible</button>
+            <think><set name="q3">3</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
         </template>
     </category>
 
     <category>
-        <pattern>STRUCTURED</pattern>
+        <pattern>STABILITY AND SECURITY</pattern>
         <template>
-            Thank you! Last question: Do you feel comfortable leading a team or do you prefer to follow?<br/>
-            <button>Lead</button> <button>Follow</button>
+            <think><set name="q3">4</set></think>
+            Thank you! Next question:<br/>
+            How do you prefer to solve problems?<br/>
+            <button>Creatively</button>
+            <button>Analytically</button>
+            <button>Pragmatically</button>
+            <button>Collaboratively</button>
+        </template>
+    </category>
+
+    <!-- Question 4 -->
+    <category>
+        <pattern>CREATIVELY</pattern>
+        <template>
+            <think><set name="q4">1</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>FLEXIBLE</pattern>
+        <pattern>ANALYTICALLY</pattern>
         <template>
-            Thank you! Last question: Do you feel comfortable leading a team or do you prefer to follow?<br/>
-            <button>Lead</button> <button>Follow</button>
+            <think><set name="q4">2</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>LEAD</pattern>
+        <pattern>PRAGMATICALLY</pattern>
         <template>
-            Thank you! Based on your responses, you are classified as an **ENTP**.<br/>
-            Your recommended jobs are:<br/>
-            <button>GET JOB RECOMMENDATIONS FOR ENTP</button>
+            <think><set name="q4">3</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
         </template>
     </category>
 
     <category>
-        <pattern>FOLLOW</pattern>
+        <pattern>COLLABORATIVELY</pattern>
         <template>
-            Thank you! Based on your responses, you are classified as an **ISFP**.<br/>
-            Your recommended jobs are:<br/>
-            <button>GET JOB RECOMMENDATIONS FOR ISFP</button>
+            <think><set name="q4">4</set></think>
+            Nice! Last question:<br/>
+            What work environment do you thrive in?<br/>
+            <button>Dynamic and fast-paced</button>
+            <button>Calm and organized</button>
+            <button>Team-oriented</button>
+            <button>Independent</button>
+        </template>
+    </category>
+
+    <!-- Question 5 -->
+    <category>
+        <pattern>DYNAMIC AND FAST-PACED</pattern>
+        <template>
+            <think><set name="q5">1</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ENTP</pattern>
+        <pattern>CALM AND ORGANIZED</pattern>
         <template>
-            Recommended jobs for ENTP:
-            <ul>
-                <li>Entrepreneur: Creates and manages new businesses, utilizing their innovative thinking.</li>
-                <li>Consultant: Provides expert advice to organizations, perfect for their strategic mindset.</li>
-                <li>Public Speaker: Engages audiences with their dynamic communication skills, aligning with their outgoing nature.</li>
-            </ul>
-            These jobs are suitable because ENTPs are known for their creativity, problem-solving skills, and ability to think outside the box. Do you think these jobs are suitable for you?<br/>
-            <button>Yes</button> <button>No</button>
+            <think><set name="q5">2</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
 
     <category>
-        <pattern>GET JOB RECOMMENDATIONS FOR ISFP</pattern>
+        <pattern>TEAM-ORIENTED</pattern>
         <template>
-            Recommended jobs for ISFP:
-            <ul>
-                <li>Graphic Designer: Creates visual content, perfect for their artistic nature.</li>
-                <li>Musician: Composes and performs music, aligning with their creative expression.</li>
-                <li>Interior Designer: Designs functional and aesthetically pleasing spaces, ideal for their attention to detail.</li>
-            </ul>
-            These jobs are suitable because ISFPs are known for their artistic talents, sensitivity, and ability to connect with others on an emotional level. Do you think these jobs are suitable for you?<br/>
-            <button>Yes</button> <button>No</button>
+            <think><set name="q5">3</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
         </template>
     </category>
+
+    <category>
+        <pattern>INDEPENDENT</pattern>
+        <template>
+            <think><set name="q5">4</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>FINALIZE QUIZ</srai>
+        </template>
+    </category>
+
+    <!-- Finalize the Quiz -->
+<category>
+    <pattern>FINALIZE QUIZ</pattern>
+    <template>
+        <think>
+            <set name="total_score"><plus>
+                <get name="q1"/><get name="q2"/><get name="q3"/><get name="q4"/><get name="q5"/>
+            </plus></set>
+        </think>
+
+        <!-- Debugging: Output the total score -->
+        Your total score is: <get name="total_score"/><br/>
+        
+        <choose>
+            <when><get name="total_score"/> = 1</when>
+                You might enjoy careers in **writing** or **education**!
+            <when><get name="total_score"/> = 2</when>
+                You might enjoy careers in **sales** or **marketing**!
+            <when><get name="total_score"/> = 3</when>
+                You might enjoy careers in **engineering** or **architecture**!
+            <when><get name="total_score"/> = </when>
+                You might enjoy careers in **healthcare** or **social work**!
+            <otherwise>
+                You might enjoy exploring various fields to find what resonates with you!
+            </otherwise>
+        </choose>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>Click node to edit pattern</pattern>
+    <template>Click node to edit template</template>
+</category>
+<category>
+    <pattern>Hello
+</pattern>
+    <template>Heeeeey
+</template>
+</category>
+<category>
+    <pattern>Hey</pattern>
+    <template>Hey, would you like to consult my quiz about careers based on personality?</template>
+</category>
+</aiml>
+
 </aiml>
