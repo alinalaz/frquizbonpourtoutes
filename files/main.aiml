@@ -7,7 +7,6 @@
             What do you enjoy doing in your free time?<br/>
             <button>Reading</button>
             <button>Socializing</button>
-            <button>Building things</button>
             <button>Helping others</button>
         </template>
     </category>
@@ -16,52 +15,36 @@
     <category>
         <pattern>READING</pattern>
         <template>
-            <think><set name="q1">1</set></think>
+            <think><set name="hobby">reading</set></think>
             Great! Next question:<br/>
             How do you prefer to work?<br/>
             <button>Independently</button>
             <button>In a team</button>
             <button>In a structured environment</button>
-            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
         <pattern>SOCIALIZING</pattern>
         <template>
-            <think><set name="q1">2</set></think>
+            <think><set name="hobby">socializing</set></think>
             Great! Next question:<br/>
             How do you prefer to work?<br/>
             <button>Independently</button>
             <button>In a team</button>
             <button>In a structured environment</button>
-            <button>In a flexible environment</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>BUILDING THINGS</pattern>
-        <template>
-            <think><set name="q1">3</set></think>
-            Great! Next question:<br/>
-            How do you prefer to work?<br/>
-            <button>Independently</button>
-            <button>In a team</button>
-            <button>In a structured environment</button>
-            <button>In a flexible environment</button>
         </template>
     </category>
 
     <category>
         <pattern>HELPING OTHERS</pattern>
         <template>
-            <think><set name="q1">4</set></think>
+            <think><set name="hobby">helping</set></think>
             Great! Next question:<br/>
             How do you prefer to work?<br/>
             <button>Independently</button>
             <button>In a team</button>
             <button>In a structured environment</button>
-            <button>In a flexible environment</button>
         </template>
     </category>
 
@@ -69,507 +52,148 @@
     <category>
         <pattern>INDEPENDENTLY</pattern>
         <template>
-            <think><set name="q2">1</set></think>
-            Nice! Next question:<br/>
+            <think><set name="work_style">independent</set></think>
+            Nice! Last question:<br/>
             What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
+            <button>Recognition</button>
             <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
+            <button>Stability</button>
         </template>
     </category>
 
     <category>
         <pattern>IN A TEAM</pattern>
         <template>
-            <think><set name="q2">2</set></think>
-            Nice! Next question:<br/>
+            <think><set name="work_style">team</set></think>
+            Nice! Last question:<br/>
             What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
+            <button>Recognition</button>
             <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
+            <button>Stability</button>
         </template>
     </category>
 
     <category>
         <pattern>IN A STRUCTURED ENVIRONMENT</pattern>
         <template>
-            <think><set name="q2">3</set></think>
-            Nice! Next question:<br/>
+            <think><set name="work_style">structured</set></think>
+            Nice! Last question:<br/>
             What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
+            <button>Recognition</button>
             <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
+            <button>Stability</button>
         </template>
     </category>
 
+    <!-- Final Question -->
     <category>
-        <pattern>IN A FLEXIBLE ENVIRONMENT</pattern>
+        <pattern>RECOGNITION</pattern>
         <template>
-            <think><set name="q2">4</set></think>
-            Nice! Next question:<br/>
-            What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
-            <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
-        </template>
-    </category>
-
-    <!-- Question 3 -->
-    <category>
-        <pattern>RECOGNITION AND REWARDS</pattern>
-        <template>
-            <think><set name="q3">1</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
+            <think><set name="motivation">recognition</set></think>
+            Thank you for completing the quiz! Let's see your results.<br/>
+            <srai>SHOW RESULTS</srai>
         </template>
     </category>
 
     <category>
         <pattern>MAKING A DIFFERENCE</pattern>
         <template>
-            <think><set name="q3">2</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>CONTINUOUS LEARNING</pattern>
-        <template>
-            <think><set name="q3">3</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>STABILITY AND SECURITY</pattern>
-        <template>
-            <think><set name="q3">4</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <!-- Question 4 -->
-    <category>
-        <pattern>CREATIVELY</pattern>
-        <template>
-            <think><set name="q4">1</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>ANALYTICALLY</pattern>
-        <template>
-            <think><set name="q4">2</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>PRAGMATICALLY</pattern>
-        <template>
-            <think><set name="q4">3</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>COLLABORATIVELY</pattern>
-        <template>
-            <think><set name="q4">4</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <!-- Question 5 -->
-    <category>
-        <pattern>DYNAMIC AND FAST-PACED</pattern>
-        <template>
-            <think><set name="q5">1</set></think>
+            <think><set name="motivation">making a difference</set></think>
             Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
+            <srai>SHOW RESULTS</srai>
         </template>
     </category>
 
     <category>
-        <pattern>CALM AND ORGANIZED</pattern>
+        <pattern>STABILITY</pattern>
         <template>
-            <think><set name="q5">2</set></think>
+            <think><set name="motivation">stability</set></think>
             Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
+            <srai>SHOW RESULTS</srai>
         </template>
     </category>
 
+    <!-- Show Results -->
     <category>
-        <pattern>TEAM-ORIENTED</pattern>
+        <pattern>SHOW RESULTS</pattern>
         <template>
-            <think><set name="q5">3</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
+            <condition name="hobby">
+                <li value="reading">
+                    <condition name="work_style">
+                        <li value="independent">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>writing</b>, <b>editing</b>, or <b>research</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>academia</b> or <b>publishing</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>library science</b> or <b>technical writing</b>!</li>
+                            </condition>
+                        </li>
+                        <li value="team">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>writing</b>, <b>editing</b>, or <b>research</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>academia</b> or <b>publishing</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>library science</b> or <b>technical writing</b>!</li>
+                            </condition>
+                        </li>
+                        <li value="structured">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>writing</b>, <b>editing</b>, or <b>research</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>academia</b> or <b>publishing</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>library science</b> or <b>technical writing</b>!</li>
+                            </condition>
+                        </li>
+                    </condition>
+                </li>
+                <li value="socializing">
+                    <condition name="work_style">
+                        <li value="independent">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>public relations</b>, <b>marketing</b>, or <b>event planning</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>community service</b> or <b>human resources</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>customer service</b> or <b>team management</b>!</li>
+                            </condition>
+                        </li>
+                         <li value="team">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>public relations</b>, <b>marketing</b>, or <b>event planning</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>community service</b> or <b>human resources</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>customer service</b> or <b>team management</b>!</li>
+                            </condition>
+                        </li>
+                         <li value="structured">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>public relations</b>, <b>marketing</b>, or <b>event planning</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>community service</b> or <b>human resources</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>customer service</b> or <b>team management</b>!</li>
+                            </condition>
+                        </li>
+                    </condition>
+                </li>
+                <li value="helping">
+                    <condition name="work_style">
+                        <li value="independent">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>counseling</b> or <b>coaching</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>healthcare</b> or <b>education</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>social work</b> or <b>therapy</b>!</li>
+                            </condition>
+                        </li>
+                        <li value="team">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>counseling</b> or <b>coaching</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>healthcare</b> or <b>education</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>social work</b> or <b>therapy</b>!</li>
+                            </condition>
+                        </li>
+                        <li value="structured">
+                            <condition name="motivation">
+                                <li value="recognition">You might enjoy careers in <b>counseling</b> or <b>coaching</b>!</li>
+                                <li value="making a difference">You might enjoy careers in <b>healthcare</b> or <b>education</b>!</li>
+                                <li value="stability">You might enjoy careers in <b>social work</b> or <b>therapy</b>!</li>
+                            </condition>
+                        </li>
+                    </condition>
+                </li>
+            </condition>
         </template>
     </category>
-
-    <category>
-        <pattern>INDEPENDENT</pattern>
-        <template>
-            <think><set name="q5">4</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
-        </template>
-    </category>
-
-    <!-- Finalize the Quiz -->
-<aiml version="2.0" encoding="UTF-8">
-    <!-- Starting the Quiz -->
-    <category>
-        <pattern>START QUIZ</pattern>
-        <template>
-            Welcome to the Career Orientation Quiz! Let's get started with your first question:<br/>
-            What do you enjoy doing in your free time?<br/>
-            <button>Reading</button>
-            <button>Socializing</button>
-            <button>Building things</button>
-            <button>Helping others</button>
-        </template>
-    </category>
-
-    <!-- Question 1 -->
-    <category>
-        <pattern>READING</pattern>
-        <template>
-            <think><set name="q1">1</set></think>
-            Great! Next question:<br/>
-            How do you prefer to work?<br/>
-            <button>Independently</button>
-            <button>In a team</button>
-            <button>In a structured environment</button>
-            <button>In a flexible environment</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>SOCIALIZING</pattern>
-        <template>
-            <think><set name="q1">2</set></think>
-            Great! Next question:<br/>
-            How do you prefer to work?<br/>
-            <button>Independently</button>
-            <button>In a team</button>
-            <button>In a structured environment</button>
-            <button>In a flexible environment</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>BUILDING THINGS</pattern>
-        <template>
-            <think><set name="q1">3</set></think>
-            Great! Next question:<br/>
-            How do you prefer to work?<br/>
-            <button>Independently</button>
-            <button>In a team</button>
-            <button>In a structured environment</button>
-            <button>In a flexible environment</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>HELPING OTHERS</pattern>
-        <template>
-            <think><set name="q1">4</set></think>
-            Great! Next question:<br/>
-            How do you prefer to work?<br/>
-            <button>Independently</button>
-            <button>In a team</button>
-            <button>In a structured environment</button>
-            <button>In a flexible environment</button>
-        </template>
-    </category>
-
-    <!-- Question 2 -->
-    <category>
-        <pattern>INDEPENDENTLY</pattern>
-        <template>
-            <think><set name="q2">1</set></think>
-            Nice! Next question:<br/>
-            What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
-            <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>IN A TEAM</pattern>
-        <template>
-            <think><set name="q2">2</set></think>
-            Nice! Next question:<br/>
-            What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
-            <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>IN A STRUCTURED ENVIRONMENT</pattern>
-        <template>
-            <think><set name="q2">3</set></think>
-            Nice! Next question:<br/>
-            What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
-            <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>IN A FLEXIBLE ENVIRONMENT</pattern>
-        <template>
-            <think><set name="q2">4</set></think>
-            Nice! Next question:<br/>
-            What motivates you most in a job?<br/>
-            <button>Recognition and rewards</button>
-            <button>Making a difference</button>
-            <button>Continuous learning</button>
-            <button>Stability and security</button>
-        </template>
-    </category>
-
-    <!-- Question 3 -->
-    <category>
-        <pattern>RECOGNITION AND REWARDS</pattern>
-        <template>
-            <think><set name="q3">1</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>MAKING A DIFFERENCE</pattern>
-        <template>
-            <think><set name="q3">2</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>CONTINUOUS LEARNING</pattern>
-        <template>
-            <think><set name="q3">3</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>STABILITY AND SECURITY</pattern>
-        <template>
-            <think><set name="q3">4</set></think>
-            Thank you! Next question:<br/>
-            How do you prefer to solve problems?<br/>
-            <button>Creatively</button>
-            <button>Analytically</button>
-            <button>Pragmatically</button>
-            <button>Collaboratively</button>
-        </template>
-    </category>
-
-    <!-- Question 4 -->
-    <category>
-        <pattern>CREATIVELY</pattern>
-        <template>
-            <think><set name="q4">1</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>ANALYTICALLY</pattern>
-        <template>
-            <think><set name="q4">2</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>PRAGMATICALLY</pattern>
-        <template>
-            <think><set name="q4">3</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <category>
-        <pattern>COLLABORATIVELY</pattern>
-        <template>
-            <think><set name="q4">4</set></think>
-            Nice! Last question:<br/>
-            What work environment do you thrive in?<br/>
-            <button>Dynamic and fast-paced</button>
-            <button>Calm and organized</button>
-            <button>Team-oriented</button>
-            <button>Independent</button>
-        </template>
-    </category>
-
-    <!-- Question 5 -->
-    <category>
-        <pattern>DYNAMIC AND FAST-PACED</pattern>
-        <template>
-            <think><set name="q5">1</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
-        </template>
-    </category>
-
-    <category>
-        <pattern>CALM AND ORGANIZED</pattern>
-        <template>
-            <think><set name="q5">2</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
-        </template>
-    </category>
-
-    <category>
-        <pattern>TEAM-ORIENTED</pattern>
-        <template>
-            <think><set name="q5">3</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
-        </template>
-    </category>
-
-    <category>
-        <pattern>INDEPENDENT</pattern>
-        <template>
-            <think><set name="q5">4</set></think>
-            Thank you for completing the quiz! Let's see your results.<br/>
-            <srai>FINALIZE QUIZ</srai>
-        </template>
-    </category>
-
-    <!-- Finalize the Quiz -->
-<category>
-    <pattern>FINALIZE QUIZ</pattern>
-    <template>
-        <think>
-            <set name="total_score"><plus>
-                <get name="q1"/><get name="q2"/><get name="q3"/><get name="q4"/><get name="q5"/>
-            </plus></set>
-        </think>
-
-        <!-- Debugging: Output the total score -->
-        Your total score is: <get name="total_score"/><br/>
-        
-        <choose>
-            <when><get name="total_score"/> = 1</when>
-                You might enjoy careers in **writing** or **education**!
-            <when><get name="total_score"/> = 2</when>
-                You might enjoy careers in **sales** or **marketing**!
-            <when><get name="total_score"/> = 3</when>
-                You might enjoy careers in **engineering** or **architecture**!
-            <when><get name="total_score"/> = </when>
-                You might enjoy careers in **healthcare** or **social work**!
-            <otherwise>
-                You might enjoy exploring various fields to find what resonates with you!
-            </otherwise>
-        </choose>
-    </template>
-</category>
-
-
-
-<category>
-    <pattern>Click node to edit pattern</pattern>
-    <template>Click node to edit template</template>
-</category>
-<category>
-    <pattern>Hello
-</pattern>
-    <template>Heeeeey
-</template>
-</category>
-<category>
-    <pattern>Hey</pattern>
-    <template>Hey, would you like to consult my quiz about careers based on personality?</template>
-</category>
-</aiml>
-
 </aiml>
